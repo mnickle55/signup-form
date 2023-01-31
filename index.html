@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    
     <title>Signup Form</title>
   </head>
   <body>
@@ -14,21 +15,21 @@
             <fieldset>
             <legend>About Me</legend>
         
-            <input type="email" id="email" name="email" value="">
+            <input type="email" id="email" name="email" value="" placeholder="Email" required>
             <label for="email">Email</label><br>
         
-            <input type="password" id="password" name="password" value="">
+            <input type="password" id="password" name="password" value="" placeholder="Password" required>
             <label for="password">Password</label><br>
 
             </fieldset>
             <br>
-            <fieldset>
+            <fieldset id="fieldset2">
                 <legend>Github Account Information</legend>
 
-                <input type="text" id="ghuser" name="ghuser" value="" />
+                <input type="text" id="ghuser" name="ghuser" value="" placeholder="Username" required>
                 <label for="ghuser">Github Username</label><br>
 
-                <p><strong>Github Plan</strong></p>
+                <p id= 'git'><strong>Github Plan</strong></p>
             
                 <input type="radio" id="enterprise" name="plan" value="">
                 <label for="enterprise">Enterprise</label><br>
@@ -40,10 +41,15 @@
                 <label for="Free">Free</label><br><br><br>
 
                 <input type="checkbox" id="remember" name="remember" value="" />
-                <label for="remember">Remember Me</label>
+                <label for="remember">Remember Me</label><br><br>
+
             </fieldset>
+            <br>
+            <button id="btn" type="submit">Submit</button>
         </form>
+
         
+        <script src="app.js"></script>
   </body>
 </html>
 
